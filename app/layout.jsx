@@ -10,6 +10,23 @@ const inter = Inter({ variable: "--font-body", subsets: ["latin"], weight: ["400
 export const metadata = {
   title: "ZoeLit Commerce | Premium Online Store",
   description: "A premium e-commerce storefront with account dashboard, cart, checkout, and order management.",
+  generator: "v0.app",
+  icons: {
+    icon: [
+      { url: "/icon-light-32x32.png", media: "(prefers-color-scheme: light)" },
+      { url: "/icon-dark-32x32.png", media: "(prefers-color-scheme: dark)" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    apple: "/apple-icon.png",
+  },
+};
+
+export const viewport = {
+  colorScheme: "light dark",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#020617" },
+  ],
 };
 
 export default function RootLayout({ children }) {
